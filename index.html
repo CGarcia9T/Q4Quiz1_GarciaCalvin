@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Q4Quiz; GarciaCalvin</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	</head>
+<body id="body">
+	<script src="main.js"></script>
+	<div class="container mt-3 mb-3 p-4" id="main">
+		<div class="row">
+			<div class="col">
+				<img src="https://cdn-icons-png.flaticon.com/512/10481/10481308.png" width="100%">
+			</div>
+			<div class="col mt-3 mb-3 p-4" id="calculatorWidget">
+				<h4>BMI Calculator</h4>
+				<hr id="hr">
+				<p><strong>Body Mass Index (BMI)</strong> categories are standardized classifications used to assess weight status based on an individual's height and weight measured in kilogram per square meter. (kg/m²)</p>
+				<br>
+				<details id="details">
+					<summary>Range</summary>
+					<table class="table table-striped table-borderless" id="table">
+					<thead>
+				 		<tr>
+				 			<th>Category</th>
+				 			<th>Range</th>
+				 		</tr>
+			 		</thead>
+			 		<tbody>
+			 			<tr>
+			 				<td>Underweight</td>
+			 				<td>< 18.5</td>
+			 			</tr>
+			 			<tr>
+			 				<td>Normal Weight</td>
+			 				<td>>= 18.5 and <= 24.9</td>
+			 			</tr>
+			 			<tr>
+			 				<td>Overweight</td>
+			 				<td>>=25 and <= 29.9</td>
+			 			</tr>
+			 			<tr>
+			 				<td>Obese</td>
+			 				<td>>=30</td>
+			 			</tr>
+			 		</tbody>
+				</table> 
+				</details>
+				<br>
+				<details id="details">
+					<summary>Instructions</summary>
+					<p>Input all the necessary details below this to receive your body mass index.</p>
+				</details>
+				<br>
+				<form>
+					<label for="inputWeight">Enter weight:</label>
+					<input type="number" class="form-control" id="inputWeight" placeholder="Enter your weight in kilograms here."required>
+					<br>
+					<label for="inputHeight">Enter height:</label>
+					<input type="number" class="form-control" id="inputHeight" placeholder="Enter your height in meters here."required>
+				</form>
+				<br>
+				<div class="row">
+					<div class="col">
+						<div id="calculateButton">
+							<button class="btn" type="button" onclick="calculateBMI()" id="button">Calculate BMI</button>
+						</div>
+					</div>
+					<div class="col">
+						<div id="reloadButton">
+							<button class="btn" type="button" onclick="window.location.reload()" id="button">Refresh</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-3 mb-3 p-3" id="output">
+			<h4 id="outputArea">See your output here in this area.</h4>
+		</div>
+	</div>
+
+</body>
+</html>

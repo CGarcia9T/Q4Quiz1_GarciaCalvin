@@ -1,0 +1,35 @@
+#outputArea {
+	text-align: center;
+}
+#calculateButton {
+	text-align: center;
+}
+#body {
+	background-color: #202C39;
+	color: #F2D492;
+}
+#main {
+	background-color: #283845;
+	border-radius: 25px;
+}
+#button {
+	background-color: #F29559;
+	color: #202C39;
+}
+#hr {
+	background-color: #F2D492;
+}
+#calculatorWidget {
+	background-color: #202C39;
+	border-radius: 25px;
+}
+#table {
+	color: #F2D492;
+}
+#details {
+	text-align: center;
+}
+#output {
+	background-color: #202C39;
+	border-radius: 25px;
+}
